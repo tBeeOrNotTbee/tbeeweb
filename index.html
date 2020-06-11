@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tbeeScrollBar.css">
+    <link rel="stylesheet" href="css/madScrollBar.css">
 </head>
 
 <body>
@@ -52,7 +54,7 @@
                     <div class="h100 d-flex flex-column justify-content-around align-items-center">
                         <div></div>
                         <img class="img-fluid logoTbee" src="img/logoTbee.png" data-aos="zoom-out-left"
-                            data-aos-duration="3000">
+                            data-aos-duration="3000" onclick="tbeeMouseEnter()">
                         <div>
                             <img src="img/tbeeArrow.png" class="arrow" id="tbeeArrow">
                         </div>
@@ -91,6 +93,8 @@
         let mad = false;
 
         $('#tbeeCard').mouseenter(function () {
+            console.log('click');
+            
             $(this).stop(true, true).css("width", "80%").css("right", "20%").siblings().css("width", "20%").css("left", "80%");
 
             if (mad == true) {

@@ -1,0 +1,35 @@
+/* Made with: http://webkit-scroll-gen.sourceforge.net/ */
+
+#madCard::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+#madCard::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+#madCard::-webkit-scrollbar-thumb {
+  background: #793c96;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+#madCard::-webkit-scrollbar-thumb:hover {
+  background: #440766;
+}
+#madCard::-webkit-scrollbar-thumb:active {
+  background: #ff00f7;
+}
+#madCard::-webkit-scrollbar-track {
+  background: #cfcfcf;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+#madCard::-webkit-scrollbar-track:hover {
+  background: #4a4a4a;
+}
+#madCard::-webkit-scrollbar-track:active {
+  background: #b3b3b3;
+}
+#madCard::-webkit-scrollbar-corner {
+  background: transparent;
+}
