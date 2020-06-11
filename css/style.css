@@ -1,0 +1,81 @@
+.h100 {
+    height: 100vh !important;
+}
+
+.half {
+    width: 50%;
+    transition: 1s ease-in-out all;
+}
+
+.logoTbee {
+    max-width: 40%;
+    transition: 1s ease-in-out all;
+}
+
+.logoMad {
+    max-width: 30%;
+    transition: 1s ease-in-out all;
+}
+
+.customFixedLeft {
+    position: absolute;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.customFixedRight {
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+#tbeeCard {
+    position: absolute;
+    display: block;
+    right: 50%;
+    background-image: url('../img/tbeeBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: contain;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#madCard {
+    position: absolute;
+    display: block;
+    left: 50%;
+    background-image: url('../img/madBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: contain;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.cardContainer {
+    overflow-y: auto;
+    box-sizing: content-box;
+}
+
+.arrow {
+    opacity: 0;
+    max-width: 50px;
+    transition: 2s ease-in-out all;
+}
+
+#navbar {
+    background-color: #333;
+    /* Black background color */
+    position: fixed!important;
+    /* Make it stick/fixed */
+    top: -50px;
+    /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    /* Full width */
+    transition: top 1s!important;
+    /* Transition effect when sliding down (and up) */
+    z-index: 100;
+}
