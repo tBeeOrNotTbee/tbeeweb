@@ -1,0 +1,35 @@
+/* Made with: http://webkit-scroll-gen.sourceforge.net/ */
+
+.customScroll::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+.customScroll::-webkit-scrollbar-button {
+  width: 4px;
+  height: 4px;
+}
+.customScroll::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 81px;
+}
+.customScroll::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.customScroll::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+.customScroll::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px inset #ffffff;
+  border-radius: 12px;
+}
+.customScroll::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+.customScroll::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+.customScroll::-webkit-scrollbar-corner {
+  background: transparent;
+}

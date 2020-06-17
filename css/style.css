@@ -1,5 +1,27 @@
+@font-face{
+    src: url("../fonts/DIN-Light.ttf");
+    font-family: "din-light";
+}
+
+@font-face{
+    src: url("../fonts/DIN-Bold.otf");
+    font-family: "din-bold";
+}
+
+.din-light{
+    font-family: "din-light"!important;
+}
+
+.din-bold{
+    font-family: "din-bold"!important;
+}
+
 .h100 {
     height: 100vh !important;
+}
+
+.h50 {
+    height: 50vh !important;
 }
 
 .half {
@@ -61,21 +83,29 @@
 }
 
 .arrow {
-    opacity: 0;
     max-width: 50px;
     transition: 2s ease-in-out all;
 }
 
-#navbar {
+#tbeeNav {
+    max-width: 80%!important;
     background-color: #333;
     /* Black background color */
     position: fixed!important;
     /* Make it stick/fixed */
-    top: -50px;
+    top: -60px;
     /* Hide the navbar 50 px outside of the top view */
     width: 100%;
     /* Full width */
     transition: top 1s!important;
     /* Transition effect when sliding down (and up) */
     z-index: 100;
+}
+
+.somos{
+    position:absolute; 
+    top:10%; 
+    left: 10%; 
+    z-index: 10; 
+    max-width: 40%;
 }

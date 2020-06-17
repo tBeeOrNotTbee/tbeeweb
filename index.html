@@ -8,69 +8,168 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tbeeScrollBar.css">
-    <link rel="stylesheet" href="css/madScrollBar.css">
+    <link rel="stylesheet" href="css/customScrollBar.css">
+    <link rel="stylesheet" href="css/fadeIn.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
-        <a class="navbar-brand" href="#">Expand at sm</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown03">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-md-0">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
-        </div>
-    </nav>
-
     <div class="container-fluid px-0 mx-0">
         <div class="mx-0 position-relative">
-            <div class="half mx-0" id="tbeeCard">
+            <div class="half mx-0 customScroll" id="tbeeCard">
+
                 <div class="cardContainer">
+
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="tbeeNav">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/tbeeNavLogo.png" class="img-fluid" alt="Logo T-Bee" style="margin: auto 0; max-height: 20px;">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarsExample03">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1"
+                                        aria-disabled="true">Disabled</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown03">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- LOGO SCREEN -->
                     <div class="h100 d-flex flex-column justify-content-around align-items-center">
                         <div></div>
                         <img class="img-fluid logoTbee" src="img/logoTbee.png" data-aos="zoom-out-left"
                             data-aos-duration="3000" onclick="tbeeMouseEnter()">
                         <div>
-                            <img src="img/tbeeArrow.png" class="arrow" id="tbeeArrow">
+                            <img src="img/tbeeArrow.png" class="arrow" id="tbeeArrow" style="opacity:0">
                         </div>
                     </div>
-                    <div id="tbeeBody" class="h100 d-none">
-                        <h2 class="mt-4">Slogan</h2>
+
+                    <!-- TBEE BODY -->
+                    <div id="tbeeBody" class="d-none">
+
+                        <div id="tbeeScreen1" class="container-fluid px-0 mx-0">
+                            <div class="row h100 mx-0 px-0 w-100 position-relative">
+                                <div class="position-absolute somos">
+                                    <img class="img-fluid slide-in from-bottom" src="img/somos.png">
+                                </div>
+                                <div class="col-4 d-flex flex-column justify-content-end">
+                                    <div class="text-right mb-5 pb-5 slide-in from-left">
+                                        <span class="din-light text-right">No es internet, <br>
+                                            No es televisión, <br>
+                                            No es material <br>
+                                            impreso</span>
+                                        <h2 class="din-bold text-right">T-BEE es un <br>
+                                            nuevo medio</h2>
+                                        <hr class="w-50 mr-0">
+                                    </div>
+                                    <div class="px-3 my-5">
+                                        <img src="img/tbeeArrow.png" class="arrow">
+                                    </div>
+                                </div>
+                                <div class="col-8 px-0">
+                                    <img class="img-fluid h100 slide-in from-right" src="img/tbeewall.png">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="tbeeScreen2" class="container-fluid h100 d-flex flex-column justify-content-between">
+                            <div class="row pt-5">
+                                <div class="col-6 offset-3 pt-5">
+                                    <img src="img/digitalSignage.png" class="img-fluid slide-in from-left" alt="">
+                                    <p class="din-light" class="text-justify text-break"
+                                        style="margin-top: 5vh!important;">Tecnología que sustituye a los carteles
+                                        tradicionales para
+                                        mejorar la presentación y promoción de ventas de productos. T-BEE se conecta a
+                                        cualquier TV y recibiendo los contenidos y la agenda de manera remota, lo que
+                                        facilita la instalación y además simplifica las actualizaciones de cualquier
+                                        archivo.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0 slide-in from-left">
+                                    <img src="img/tbeeScreen2.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="tbeeScreen3" class="container h100 pt-3">
+                            <div class="row py-5">
+                                <div class="col-12">
+                                    <h2 class="din-light">Usos & Beneficios</h2>
+                                    <p class="text-center pt-3 din-light">Existe una gama amplia de posibles usos. Esta
+                                        tecnología se puede utilizar en <b>interiores o exteriores.</b></p>
+                                    <p class="text-center pt-3 din-light">La tecnología de <b>T-BEE</b> permite una
+                                        planificación exacta y eficaz ya que el contenido puede ser adaptado a los
+                                        requerimientos</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1 offset-3 py-5">
+                                    <img src="img/toRightArrow.png" class="img-fluid">
+                                </div>
+                                <div class="col-6 border-left py-5">
+                                    <h3 class="din-light">La comunicación es más efectiva debido a la rapidez y agilidad de la modalidad.</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1 offset-3 py-5">
+                                    <img src="img/toRightArrow.png" class="img-fluid">
+                                </div>
+                                <div class="col-6 border-left py-5">
+                                    <h3 class="din-light">El costo económico es bajo ya que se ahorra la impresión y la colocación.</h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container-fluid h100 mt-3" style="overflow-y: hidden;">
+                            <div class="row">
+                                <div class="col-4 h50 slide-in from-left" style="background-image: url('img/tbeegallery/pic1.png');"></div>
+                                <div class="col-4 h50 slide-in from-bottom" style="background-image: url('img/tbeegallery/pic2.png');"></div>
+                                <div class="col-4 h50 slide-in from-right" style="background-image: url('img/tbeegallery/pic3.png');"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 h50 slide-in from-left" style="background-image: url('img/tbeegallery/pic4.png');"></div>
+                                <div class="col-4 h50 slide-in from-right" style="background-image: url('img/tbeegallery/pic5.png');"></div>
+                                <div class="col-4 h50 slide-in from-right" style="background-image: url('img/tbeegallery/pic6.png');"></div>
+                            </div>
+                        </div>
+
+
                     </div>
+
+
                 </div>
             </div>
-            <div class="half mx-0" id="madCard">
+            <div class="half mx-0 customScroll" id="madCard">
                 <div class="cardContainer">
                     <div class="h100 d-flex flex-column justify-content-around align-items-center">
                         <div></div>
                         <img class="img-fluid logoMad" src="img/logoMad.png" data-aos="zoom-out-right"
                             data-aos-duration="3000">
-                        <img src="img/madArrow.png" class="arrow" id="madArrow">
+                        <img src="img/madArrow.png" class="arrow" id="madArrow" style="opacity:0">
                     </div>
                     <div id="madBody" class="h100 d-none">
                         <h2 class="mt-4">Slogan</h2>
@@ -92,9 +191,29 @@
         let tbee = false;
         let mad = false;
 
+        const sliders = document.querySelectorAll('.slide-in');
+
+        const appearOptions = {
+            threshold: 0,//asi parece cuando todo el obj ingreso al viewport 1=true
+            rootMargin: "0px 0px -200px 0px" //asi cuando tiene 200px desde abajo hasta el obj
+        };
+
+        const appearOnScroll = new IntersectionObserver(
+            function (entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        console.log(entry.target);
+
+                        entry.target.classList.add('appear');
+                        //appearOnScroll.unobserve(entry.target)
+                    }
+                })
+            },
+            appearOptions);
+
         $('#tbeeCard').mouseenter(function () {
-            console.log('click');
-            
             $(this).stop(true, true).css("width", "80%").css("right", "20%").siblings().css("width", "20%").css("left", "80%");
 
             if (mad == true) {
@@ -107,6 +226,7 @@
             $('#tbeeBody').removeClass('d-none');
 
             tbee = true;
+            sliders.forEach(slide => { appearOnScroll.observe(slide) })
         });
 
         $('#madCard').mouseenter(function () {
@@ -122,13 +242,9 @@
             $('#madBody').removeClass('d-none');
 
             mad = true;
+            sliders.forEach(slide => { appearOnScroll.observe(slide) })
         });
 
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
-        
-        //document.getElementById('cardContainerTbee').onscroll = function () { scrollFunction() };
-        //document.getElementById('cardContainerMad').onscroll = function () { scrollFunction() };
         document.getElementById('tbeeCard').onscroll = function () { scrollFunction() };
         document.getElementById('madCard').onscroll = function () { scrollFunctionMad() };
 
@@ -136,23 +252,20 @@
         madCard = document.getElementById('madCard');
 
         function scrollFunction() {
-            console.log(tbeeCard.scrollTop);
-            
             if (tbeeCard.scrollTop >= 500) {
-                document.getElementById("navbar").style.top = "0";
+                document.getElementById("tbeeNav").style.top = "0";
             } else {
-                document.getElementById("navbar").style.top = "-50px";
+                document.getElementById("tbeeNav").style.top = "-60px";
             }
         }
 
-        function scrollFunctionMad() {            
+        function scrollFunctionMad() {
             if (madCard.scrollTop >= 500) {
                 document.getElementById("navbar").style.top = "0";
             } else {
-                document.getElementById("navbar").style.top = "-50px";
+                document.getElementById("navbar").style.top = "-60px";
             }
         }
-
     </script>
 </body>
 
