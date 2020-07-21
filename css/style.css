@@ -1,3 +1,7 @@
+#tbeeCard {
+    scroll-behavior: smooth;
+}
+
 @font-face{
     src: url("../fonts/DIN-Light.ttf");
     font-family: "din-light";
@@ -8,6 +12,15 @@
     font-family: "din-bold";
 }
 
+@font-face{
+    src: url("../fonts/DIN-Black.ttf");
+    font-family: "din-black";
+}
+
+.no-align{
+    vertical-align: center;
+}
+
 .din-light{
     font-family: "din-light"!important;
 }
@@ -16,12 +29,58 @@
     font-family: "din-bold"!important;
 }
 
+.din-black{
+    font-family: "din-black";
+}
+
 .h100 {
     height: 100vh !important;
 }
 
+.h30 {
+    height: 30vh !important;
+}
+
 .h50 {
     height: 50vh !important;
+}
+
+.h50p {
+    max-height: 50% !important;
+}
+
+.h1-5em{
+    height: 1.5em;
+}
+
+.nav-icon{
+    max-width: 1.5em;
+    display: inline;
+    vertical-align: center;
+}
+
+.bc-black{
+    background-color: black!important;
+}
+
+.bc-grey{
+    background-color: #3d3d3d!important;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-orange{
+    color: #d17222;
+}
+
+.text-black{
+    color: black;
+}
+
+.icon-black{
+    filter: brightness(0);
 }
 
 .half {
@@ -51,6 +110,14 @@
     right: 0 !important;
 }
 
+.font-size-3{
+    font-size: 3em;
+}
+
+.font-grey{
+    color: #676767;
+}
+
 #tbeeCard {
     position: absolute;
     display: block;
@@ -62,6 +129,19 @@
     background-size: contain;
     max-height: 100vh;
     overflow-y: auto;
+    color: #676767;
+}
+
+#tbeeCard b{
+    font-family: "din-bold"!important;
+}
+
+#tbeeCard .carusel-indicators .active{
+    background-color: black!important;
+}
+
+#tbeeCard .carusel-indicators{
+    margin-bottom: -2em!important;
 }
 
 #madCard {
@@ -87,13 +167,15 @@
     transition: 2s ease-in-out all;
 }
 
+/* nav */
+
 #tbeeNav {
     max-width: 80%!important;
     background-color: #333;
     /* Black background color */
     position: fixed!important;
     /* Make it stick/fixed */
-    top: -60px;
+    top: -10vh;
     /* Hide the navbar 50 px outside of the top view */
     width: 100%;
     /* Full width */
@@ -102,10 +184,83 @@
     z-index: 100;
 }
 
+.tbee-nav-grey{
+    background-color: #404040;
+}
+
+.tbee-nav-grey2{
+    background-color: #6a6a6a;
+}
+
+.vh10{
+    height: 10vh!important;
+}
+
+
+nav .img-fluid{
+    height: 50%!important;
+    width: auto!important;
+    margin: auto
+}
+
+
 .somos{
     position:absolute; 
     top:10%; 
     left: 10%; 
     z-index: 10; 
     max-width: 40%;
+}
+
+.acom-lg{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    max-width: 20%;
+}
+
+.title-light{
+    font-size: 3em!important;
+}
+
+.border-left{
+    border-left-width: 5px!important;
+    border-left-color: #b6b5af!important;
+}
+
+.gal-effect{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-effect img{
+    transform: scale(1.1);
+    transition: all 1s linear;
+}
+
+.gal-effect:hover img{
+    transform: scale(1.3);
+}
+
+.price-gradient{
+    background: rgb(186,186,186);
+    background: linear-gradient(90deg, #e1e1e2 30%, rgba(246,246,246,1) 100%);
+}
+
+.price{
+    font-size: 0.8em;
+}
+
+.text-price{
+    font-size: 0.8rem;
+}
+
+.limit-h30-img img{
+    max-height: 30vh;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
 }
