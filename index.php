@@ -1,80 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-Bee</title>
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/customScrollBar.css">
-    <link rel="stylesheet" href="css/fadeIn.css">
-</head>
+<?php require_once('partials/head.php'); ?>
 
-<body>
+<body class="desktop">
+    
+    <?php $view="desktop"; require_once("js/mobileOrDesktop.php"); ?>
+
     <div class="container-fluid px-0 mx-0">
         <div class="mx-0 position-relative">
             <div class="half mx-0 customScroll" id="tbeeCard">
 
                 <div id="tbeeHalf" class="cardContainer">
 
-                    <nav id="tbeeNav" class="navbar navbar-expand-sm navbar-dark bg-dark p-0 vh10" id="tbeeNav">
-                        <div class="row p-0 w-100 m-0 h-100">
-                            <div class="col-4 p-0 pl-3 tbee-nav-grey h-100">
-                                <a href="#" class="my-x ml-3 h-100 d-flex align-content-center">
-                                    <img src="img/tbeeNavLogo.png" class="img-fluid" alt="Logo T-Bee">
-                                </a>
-                            </div>
-                            <div class="col-8 p-0 tbee-nav-grey2 d-flex align-content-center">
-                                <div class="collapse navbar-collapse" id="navbarsExample03">
-                                    <ul class="navbar-nav mr-auto w-100 d-flex justify-content-end pr-4">
-                                        <li
-                                            class="nav-item active h-100 d-flex justify-content-center align-content-center">
-                                            <a class="nav-link" href="#nosotros">
-                                                <img src="img/usIcon.png" class="nav-icon">
-                                                Nosotros
-                                            </a>
-                                        </li>
-                                        <li
-                                            class="nav-item active h-100 d-flex justify-content-center align-content-center">
-                                            <a class="nav-link" href="#clientes">
-                                                <img src="img/cutomersIcon.png" class="nav-icon">
-                                                Clientes
-                                            </a>
-                                        </li>
-                                        <li
-                                            class="nav-item active h-100 d-flex justify-content-center align-content-center">
-                                            <a class="nav-link" href="#abonos">
-                                                <img src="img/paymentIcon.png" class="nav-icon">
-                                                Abonos
-                                            </a>
-                                        </li>
-                                        <li
-                                            class="nav-item active h-100 d-flex justify-content-center align-content-center">
-                                            <a class="nav-link" href="#trabajos">
-                                                <img src="img/worksIcon.png" class="nav-icon">
-                                                Trabajos
-                                            </a>
-                                        </li>
-                                        <li
-                                            class="nav-item active h-100 d-flex justify-content-center align-content-center">
-                                            <a class="nav-link" href="#footer">
-                                                <img src="img/mapsIcon.png" class="nav-icon">
-                                                Mapas
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </nav>
+                    <?php require_once('partials/tbee/tbeeNav.php');?>
 
                     <!-- LOGO SCREEN -->
                     <div data-anchor="Page logo"
@@ -176,30 +115,12 @@
 
                         <div id="trabajos" class="tbee-screeen container-fluid h100 mt-3" style="overflow-y: hidden;">
                             <div class="row">
+                            <?php
+                            require_once("partials/tbee/tbeeGallery.php");
+                            foreach ($gallery as $url) { ?>
                                 <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-bottom"
-                                        src="img/tbeegallery/tbeeGal_0000_Capa-2.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-bottom"
-                                        src="img/tbeegallery/tbeeGal_0001_Capa-3.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-bottom"
-                                        src="img/tbeegallery/tbeeGal_0002_Capa-4.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-bottom"
-                                        src="img/tbeegallery/tbeeGal_0003_Capa-5.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-bottom"
-                                        src="img/tbeegallery/tbeeGal_0004_Capa-6.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-bottom"
-                                        src="img/tbeegallery/tbeeGal_0005_Capa-7.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-bottom"
-                                        src="img/tbeegallery/tbeeGal_0006_Capa-8.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-bottom"
-                                        src="img/tbeegallery/tbeeGal_0007_Capa-9.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-left"
-                                        src="img/tbeegallery/tbeeGal_0008_Capa-10.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-left"
-                                        src="img/tbeegallery/tbeeGal_0009_Capa-11.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-right"
-                                        src="img/tbeegallery/tbeeGal_0010_Capa-12.png"></div>
-                                <div class="col-3 p-0 h30 gal-effect"><img class="img-fluid slide-in from-right"
-                                        src="img/tbeegallery/tbeeGal_0011_Capa-13.png"></div>
+                                        src="<?=$url?>"></div>
+                            <?php } ?>   
                             </div>
                         </div>
 

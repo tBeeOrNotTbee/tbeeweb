@@ -67,6 +67,50 @@
     background-color: #3d3d3d!important;
 }
 
+.contenidos-bc{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/tbeeMad.png');
+}
+
+.tbee-bc{
+    background-image: url('../img/tbeeBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.tr-bc{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/mobileBackground.png');
+}
+
+.pic-1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/mobilePic1.png');
+}
+
+.pic-2{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/mobilePic2.png');
+}
+
+.somos-bc{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/tbeewall.png');
+}
+
 .text-white{
     color: white;
 }
@@ -169,7 +213,7 @@
 
 /* nav */
 
-#tbeeNav {
+.desktop #tbeeNav {
     max-width: 80%!important;
     background-color: #333;
     /* Black background color */
@@ -184,8 +228,12 @@
     z-index: 100;
 }
 
-.tbee-nav-grey{
+.desktop .tbee-nav-grey{
     background-color: #404040;
+}
+
+.mobile .tbee-nav-grey{
+    background-color: none;
 }
 
 .tbee-nav-grey2{
@@ -228,6 +276,10 @@ nav .img-fluid{
     border-left-color: #b6b5af!important;
 }
 
+.border-mobile{
+    border-left-width: 3px!important;
+}
+
 .gal-effect{
     overflow: hidden;
     display: flex;
@@ -264,3 +316,4 @@ nav .img-fluid{
     height: auto;
     margin: auto;
 }
+
